@@ -26,7 +26,8 @@ client.on('ready', () => {
   console.log('')
 });
 
-      bot.on('guildMemberAdd', member => {
+ 
+bot.on('message', message => {
       const welcomer =  member.guild.channels.find('name', 'welcome');
       var Canvas = require('canvas')
       var jimp = require('jimp')
